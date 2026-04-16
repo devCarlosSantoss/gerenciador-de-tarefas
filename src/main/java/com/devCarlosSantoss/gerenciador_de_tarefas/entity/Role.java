@@ -20,6 +20,6 @@ public class Role implements Serializable {
     @Column(unique = true, length = 20)
     private String name;
 
-    @ManyToMany(mappedBy = "")
+    @ManyToMany(mappedBy = "roles")
     private List<User> users;
 }
